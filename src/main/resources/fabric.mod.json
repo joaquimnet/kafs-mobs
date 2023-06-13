@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "kafs-mobs",
+  "version": "${version}",
+  "name": "Kaf's Mobs",
+  "description": "Adds Kaf's custom mobs.",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://github.com/codekaffe/kafs-mobs",
+    "sources": "https://github.com/codekaffe/kafs-mobs"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/kafs-mobs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.codekaffe.kafsmobs.KafsMobs"
+    ],
+    "client": [
+      "com.codekaffe.kafsmobs.KafsMobsClient"
+    ],
+    "fabric-datagen": [
+      "com.codekaffe.kafsmobs.KafsMobsDataGenerator"
+    ]
+  },
+  "mixins": [
+    "kafs-mobs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.19.2",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
